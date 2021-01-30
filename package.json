@@ -1,0 +1,8 @@
+{
+  "name": "backend-radio-base",
+  "version": "1.0.0",
+  "description": "backend for radio bases test",
+  "main": "index.js",
+  "author": "MikeFranco",
+  "license": "MIT"
+}
