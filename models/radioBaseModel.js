@@ -2,19 +2,16 @@ const { model, Schema } = require('mongoose');
 
 const radioBaseSchema = new Schema(
   {
-    /* id: {
-      type: String
-    }, */
-    RADIOBASE/* radiobase */: {
+    RADIOBASE: {
       type: String
     },
-    FECHA/* fecha */: {
+    FECHA: {
       type: String
     },
-    REGION/* region */: {
+    REGION: {
       type: Number
     },
-    TRAFICO/* trafico */: {
+    TRAFICO: {
       type: Number
     }
   },

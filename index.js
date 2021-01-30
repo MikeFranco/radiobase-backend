@@ -7,10 +7,7 @@ const cookieParser = require('cookie-parser');
 
 //routes
 const tables = require('./routes/radioBaseRoute');
-/* const auth = require('./routes/authRoutes.js');
-const devices = require('./routes/devicesRoutes');
 
-const SESSION_SECRET = process.env.SECRET; */
 const port = process.env.PORT || 5000;
 
 app.use(function (req, res, next) {
@@ -41,7 +38,7 @@ mongoose.connect(
     useFindAndModify: false
   },
   (err, res) => {
-    console.log('conectado a la BD');
+    console.log(`conectado a la BD: ${res.connections[0].name}`);
   }
 );
 
